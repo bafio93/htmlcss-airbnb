@@ -4,20 +4,25 @@
     box-sizing: border-box;
 }
 
-main {
-    border: 1px solid orange;
+#container {
+    background-color: purple;
     width: 40vw;
-    padding: 1vw 5vw;
     height: auto;
     position: relative;
     left: 30vw;
-    top: 5vh;
+    z-index: 10;
 }
 
 figure {
-    border: 1px solid pink;
     width: 30vw;
     height: 20vw;
     display: inline-block;
-    margin: 1vw;
+    margin: 0 5vw;
+    z-index: 30;
+    background-color: pink;
+}
+
+figure:nth-child(2n+1) {
+    background-color: yellow;
+    margin: 10vw 5vw;
 }
