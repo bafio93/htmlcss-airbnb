@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqF84cHkkjn6hPYB6U3SQC-ro7tFyPbUELjjgykBdBIWtNJ4m);
+}
+
 #container {
-    background-color: purple;
+    background-color: rgba(235, 52, 229, 0.4);
     width: 40vw;
     height: auto;
     position: relative;
@@ -19,10 +23,25 @@ figure {
     display: inline-block;
     margin: 0 5vw;
     z-index: 30;
-    background-color: pink;
+    background-color: rgba(201, 149, 44, 1);
 }
 
 figure:nth-child(2n+1) {
-    background-color: yellow;
     margin: 10vw 5vw;
+}
+
+img,.opaque_layer {
+    width: inherit;
+    height: inherit;
+}
+
+.opaque_layer {
+    display: block;
+    position: absolute;
+    z-index: 50;
+    background-color: rgba(201, 149, 44, 0.4);
+}
+
+img {
+    border: thick solid rgb(74, 40, 73);
 }
