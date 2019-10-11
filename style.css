@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    border: 4px solid orange;
+    width: 11vw;
+}
+
+figure,.opaque_layer,.false_image {
+    border: 2px solid pink;
+}
+
+.false_image {
+    height: 10vh;
+    width: 10vw;
+}
+
+figure {
+    display: inline-block;
+}
