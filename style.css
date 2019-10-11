@@ -6,6 +6,7 @@
 
 body {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqF84cHkkjn6hPYB6U3SQC-ro7tFyPbUELjjgykBdBIWtNJ4m);
+    font-family: 'Liu Jian Mao Cao', cursive;
 }
 
 #container {
@@ -15,6 +16,7 @@ body {
     position: relative;
     left: 30vw;
     z-index: 10;
+    margin: 5vw 0;
 }
 
 figure {
@@ -34,12 +36,20 @@ img,.opaque_layer {
     width: inherit;
     height: inherit;
 }
-
+/* Non chiaro come scalare appropiatamente il testo!! */
 .opaque_layer {
+    text-align: center;
+    line-height: 20vw;
+    font-size: 200%;
+    color: white;
     display: block;
     position: absolute;
     z-index: 50;
-    background-color: rgba(201, 149, 44, 0.4);
+    background-color: rgba(201, 149, 44, 0.7);
+}
+
+.opaque_layer:hover {
+    visibility: hidden;
 }
 
 img {
